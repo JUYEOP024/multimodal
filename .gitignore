@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+env/
+ENV/
+multi_venv/
+data/
+*.pth 
+*.mp4
+*.pt
+*.png
+*.jpg
+*.jpeg
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*.log
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project specific
+verify_install.py
+\n.DS_Store\n__pycache__/\n*.sqlite3\n*_venv/\n.env\n\n.DS_Store\n__pycache__/\n*.sqlite3\n*_venv/\n.env\n\n.DS_Store\n__pycache__/\n*.sqlite3\n*_venv/\n.env\n
