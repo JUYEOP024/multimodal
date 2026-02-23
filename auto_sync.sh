@@ -18,14 +18,18 @@ for d in "$BASE_DIR"/*/; do
             
             if [ "$file_count" -gt 3 ]; then
                 commit_msg="Auto sync: Update $changed_files, etc."
-            else
+            elif [ -n "$changed_files" ]; then
                 commit_msg="Auto sync: Update $changed_files"
+            else
+                commit_msg="Auto sync: Routine update"
             fi
             
             git commit -m "$commit_msg"
-            # Attempt to push to the current remote branch
-            # We assume 'origin' is set up.
-            git push origin HEAD
+            
+            # Check if the 'origin' remote exists before pushing
+            if git remote | grep -q "^origin$"; then
+                git push origin HEAD
+            fi
         fi
     fi
 done
