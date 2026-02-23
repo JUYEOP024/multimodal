@@ -25,7 +25,13 @@ venv/
 env/
 ENV/
 multi_venv/
-
+data/
+*.pth 
+*.mp4
+*.pt
+*.png
+*.jpg
+*.jpeg
 # Jupyter Notebook
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
